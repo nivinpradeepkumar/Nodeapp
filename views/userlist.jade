@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h2 User List
+    #userList
+      table
+        thead
+          th ID
+          th First Name
+          th Last Name
+          th Email Id
+          th Phone Number
+        tbody
+        each user, i in userlist
+          tr
+          th  #{user._id}
+          th  #{user.FirstName}
+          th  #{user.LastName}
+          th  #{user.EmailId}
+          th  #{user.Phonenumber}
+    // /USER LIST
+         
+    

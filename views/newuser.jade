@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  form#formAddUser(name="adduser",method="post",action="/adduser")
+    input#inputUserEmail(type="text", placeholder="Firstname", name="Firstnames")
+    input#inputUserEmail(type="text", placeholder="Lastname", name="Lastnames")
+    input#inputUserName(type="text", placeholder="Email", name="EmailId")
+    input#inputUserEmail(type="text", placeholder="Phonenuber", name="Phonenumber")
+    button#btnSubmit(type="submit") submit
